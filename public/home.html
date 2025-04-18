@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+</head>
+<body>
+  <h2 id="welcomeText">Welcome!</h2>
+
+  <script>
+    const username = localStorage.getItem("username");
+    if (username) {
+      document.getElementById("welcomeText").textContent = `Welcome, ${username}!`;
+    } 
+  </script>
+</body>
+</html>
